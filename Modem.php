@@ -326,6 +326,9 @@ class Modem
     }
 
     /**
+     * Receive SMS
+     *
+     * @return SMS|null
      * @throws Exceptions\ReadOnClosedSerialDevice
      */
     public function receiveSms(): ?SMS
@@ -346,13 +349,6 @@ class Modem
         return null;
     }
 
-    public function getRegistrationState()
-    {
-        $response = $this->command('AT+CREG=1');
-        if ($response->isOK()) {
-            $response = $this->command('AT+CREG=1');
-        }
-    }
 
 }
 
