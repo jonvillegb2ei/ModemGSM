@@ -1,4 +1,4 @@
-#PHP Library for GSM modem (Beta version)
+# PHP Library for GSM modem (Beta version)
 
 
 ## Usage
